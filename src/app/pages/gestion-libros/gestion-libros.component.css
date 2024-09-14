@@ -1,0 +1,31 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre tabla y formulario */
+  align-items: flex-start; /* Alinea los elementos arriba */
+  gap: 20px; /* Añade un espacio entre la tabla y el formulario */
+  padding: 20px;
+}
+
+/* Estilos de la tabla */
+.table-container {
+  width: 50%; /* Ajuste para que la tabla ocupe la mitad del ancho */
+  max-width: 600px; /* Ancho máximo de la tabla */
+}
+
+/* Estilos del formulario */
+.form-container {
+  width: 45%; /* Ajuste para que el formulario ocupe la otra mitad */
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Para pantallas pequeñas, los elementos se apilan */
+    align-items: center;
+  }
+  
+  .table-container, .form-container {
+    width: 100%; /* En pantallas pequeñas, ambos toman el ancho completo */
+  }
+}
